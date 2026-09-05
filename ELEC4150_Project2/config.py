@@ -4,8 +4,9 @@
 # ============================================================
 
 # Part 1
-TARGET_FS = 60000          # Required sampling rate: 60 kHz
-AUDIO_MAX_DURATION = 30    # Recommended < 30 seconds
+AUDIO_FILE       = "audio_3-GANGNAM_STYLE.wav"  # primary audio file
+TARGET_FS        = 60000    # Required sampling rate: 60 kHz
+AUDIO_MAX_DURATION = 30     # Recommended < 30 seconds
 
 # Part 2
 BIT_RATE = 64000           # Required compression rate: 64 kbps

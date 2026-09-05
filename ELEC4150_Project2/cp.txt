@@ -1,0 +1,87 @@
+Your Role: You are an experienced software engineer. Before you start the task as mentioned below, please do the planning and write your steps in an aispace\task-<task-num>.md file with checkboxes against each step in the plan and maintain aispace\task-index.md. If any step needs my clarification, please add it to the step to interact with me and get my confirmation. Do not make critical decisions on your own. Once you produce the plan, ask for my review and approval. After my approval, you can go ahead to execute the same plan one step at a time. Once you finish each step, mark the checkboxes as done in the plan.
+
+Task 1 : Item 1
+(where Task 1 is main task and Item 1 is sub item of that task )
+
+create/Update file: /CLAUDE.md 
+in it mention everytime exclude file: /cp.txt for any review purpose
+
+
+Task 1 : Item 1
+setup this project properly and create a mini conda env `baikarms` and install all the required lib and use it 
+
+
+Task 1 : Item 2
+create testcase for this project 
+run this project and test it   
+
+
+Task 1 : Item 3
+organize our complete project files properly 
+and update /CLAUDE.md 
+
+
+
+Task 1 : Item 4
+
+review :
+C:\Users\Atharva Pawar\Documents\GitHub\ELEC4150_Project2\ELEC4150_Project2\project-info
+
+Consider this rubric and the project specification page 
+in the part-1 when i run the spectrogram task the audio doest play when the spectrogram is displayed, when i cancel the spectrogram waveform then the audio starts playing 
+so i changed the code so that everything runs simultaneously so after that when i run the code, the spectrogram and the audio lags 
+so as in matrlab my friends are doing everything runs smoothly and simultaneously
+
+
+
+
+
+
+Task 2 : Item 1
+
+Now review the Project Info folder (/project-info) and understand the project rubrics. What are the aims and objectives? List all the three part Aims and objective which is needed, and then tasks for each part one, part two, part three.
+
+
+it should have /outputs folder with /part-1, /part-2, /part-3 subfolders
+
+
+Task 2 : Item 2
+
+
+
+
+part 1.1:
+convert the audio to 60k Hz then play audio + live spectrogram 
+
+part 1.2:
+only extract vocals from song file  
+
+part 1.3:
+karoke : where we need to delet the vocals and will keep only tune without vocals 
+
+So this is our aim. The Part 1.1 is where we need to. It's been already run. For the Part 2, it's been failing where it is a karaoke. So we need to just only extract the audio, audio, like the vocal, like the song, who is been speaking and saying the lyrics. That we need to extract the vocals for the Part 1.2. And for the Part 1.3, we need to extract only the music, just like the karaoke, where the only background music is being captured and running. So this is the main aim. There is some code which is doing, but it's not proper. We need to now tune it properly, so that the Part 1.2 and the 1.3 becomes proper.
+
+
+
+part 2.1:
+compress the vocal to 64kbps 
+
+part 2.2:
+modulation method : analog 
+
+
+
+
+
+python run_part1.py --audio audio_1.wav --track karaoke
+python run_part1.py --audio audio_3-GANGNAM_STYLE.wav --track karaoke
+
+python run_part1.py --audio "audio_2-edsheeran_perfect.wav" --track karaoke
+
+
+python run_part1.py --audio "audio_2-edsheeran_perfect.wav" --track vocal
+python run_part1.py --audio "audio_3-GANGNAM_STYLE.wav" --track vocal
+
+
+
+python run_part2.py --duration 30

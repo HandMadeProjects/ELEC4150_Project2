@@ -1,6 +1,0 @@
-numpy
-scipy
-matplotlib
-librosa
-sounddevice
-soundfile

@@ -3,14 +3,21 @@ import matplotlib.pyplot as plt
 from scipy.signal import stft
 
 
-def calculate_spectrogram(audio, fs):
+def calculate_spectrogram(audio, fs, **kwargs):
+    window = kwargs.get("window", kwargs.get("window_type", "hann"))
+    nperseg = kwargs.get("nperseg", kwargs.get("n_fft", 2048))
+    hop_length = kwargs.get("hop_length", None)
+    if hop_length is not None:
+        noverlap = nperseg - hop_length
+    else:
+        noverlap = kwargs.get("noverlap", 1536)
 
     frequencies, times, Zxx = stft(
         audio,
         fs=fs,
-        window="hann",
-        nperseg=2048,
-        noverlap=1536
+        window=window,
+        nperseg=nperseg,
+        noverlap=noverlap
     )
 
     magnitude_db = 20 * np.log10(
